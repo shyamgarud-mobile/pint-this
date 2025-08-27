@@ -3,7 +3,7 @@
   "displayName": "Pint This",
   "publisher": "ShyamkumarAshokGarud",
   "description": "Adds a right-click option on tabs to run pint <file>.",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.80.0"
