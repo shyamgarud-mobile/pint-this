@@ -1,6 +1,14 @@
 # Pint This - Installation & Usage Guide
 
-A VS Code extension that adds a convenient right-click option to run Laravel Pint on your PHP files with just two simple steps.
+A VS Code extension that adds a convenient right-click option to run Laravel Pint on your PHP files. Format single files or multiple files at once with just a few clicks!
+
+## Features
+
+✨ **Right-click on file tabs** - Quick access from any open PHP file  
+✨ **Right-click in Explorer** - Format files directly from the file explorer  
+✨ **Multiple file selection** - Select and format multiple PHP files at once  
+✨ **Progress notifications** - See real-time progress when formatting multiple files  
+✨ **Smart filtering** - Automatically filters to PHP files only when multiple files are selected  
 
 ## Prerequisites
 
@@ -52,14 +60,37 @@ If you get a "command not found" error, ensure Composer's global bin directory i
 
 ## Step 3: Using the Extension
 
-### Quick Start
+### Method 1: From File Tabs (Single File)
+
+![Pint This from file tab](https://raw.githubusercontent.com/shyamgarud-mobile/pint-this/refs/heads/main/single-file.png)
 
 1. **Open any PHP file** in VS Code
-2. **Right-click on the file tab** (the tab at the top, not in the editor)
+2. **Right-click on the file tab** (the tab at the top)
 3. **Click "Pint this"** from the context menu
-4. **Done!** Your file will be automatically formatted according to Laravel's coding standards
+4. **Done!** Your file will be automatically formatted
 
-You'll see a notification when Pint finishes processing the file.
+### Method 2: From Explorer (Single or Multiple Files)
+
+![Pint This from explorer](https://raw.githubusercontent.com/shyamgarud-mobile/pint-this/refs/heads/main/multiple-files.png)
+
+#### Single File:
+1. **Right-click on any PHP file** in the Explorer panel
+2. **Click "Pint this"** from the context menu
+
+#### Multiple Files:
+1. **Select multiple files** in the Explorer panel (Ctrl+Click or Cmd+Click)
+2. **Right-click on the selection**
+3. **Click "Pint this"** from the context menu
+4. **Watch the progress** - you'll see a progress notification for multiple files
+
+**Note**: When selecting multiple files, the extension automatically filters to PHP files only, so you can safely select mixed file types.
+
+### Features in Action
+
+- **Single file**: Get instant feedback with a success notification
+- **Multiple files**: See progress notifications and batch processing results
+- **Error handling**: Clear error messages if something goes wrong
+- **Smart filtering**: Only PHP files are processed, even in mixed selections
 
 ## Configuration (Optional)
 
@@ -97,9 +128,35 @@ If still not working, add Composer's bin directory to your PATH:
 
 **Solution**: 
 1. Restart VS Code
-2. Make sure you're right-clicking on the file **tab**, not in the editor
+2. Make sure you're right-clicking on either:
+   - The file **tab** (at the top), or
+   - Files in the **Explorer panel**
 3. Check that the extension is enabled in the Extensions panel
+
+### Multiple File Selection Not Working
+
+**Solution**:
+1. Make sure you're selecting files in the **Explorer panel** (not tabs)
+2. Use Ctrl+Click (Windows/Linux) or Cmd+Click (Mac) to select multiple files
+3. Right-click on one of the selected files to see the context menu
+
+## Changelog
+
+### Latest Version
+- ✅ Added support for multiple file selection
+- ✅ Added progress notifications for batch processing
+- ✅ Improved context menu placement (works from both tabs and explorer)
+- ✅ Smart PHP file filtering
+- ✅ Enhanced error handling
 
 ## About Laravel Pint
 
 Laravel Pint is a PHP code style fixer that ensures your code follows Laravel's coding standards. It automatically fixes indentation, spacing, and other style issues to keep your code clean and consistent.
+
+## Contributing
+
+Found a bug or have a feature request? Please open an issue on our [GitHub repository](https://github.com/your-repo/pint-this).
+
+## License
+
+This extension is licensed under the MIT License.
